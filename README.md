@@ -36,7 +36,7 @@ Een volledige PHP-gebaseerde website voor een reisbureau, met boekingssysteem, k
 
 1. Clone de repository naar je webserver:
    ```bash
-   git clone https://github.com/uwbedrijf/reisbureau-website.git
+   git clone https://github.com/PHPCRUD
    ```
 
 2. Navigeer naar de projectmap:
