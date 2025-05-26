@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="css/main.css" >
-    </head>
+</head>
+<body>
     <header>
         <div class="nav">
             <div class="left-75">
@@ -27,18 +28,18 @@
                 </div>
             </div>
         </div>
-        <body>
-        <div id="terms-popup" class="terms-popup">
+    </header>
+    <div id="terms-popup" class="terms-popup">
         <p>Door deze website te gebruiken, gaat u akkoord met onze <a href="/pages/terms.html" target="_blank">algemene voorwaarden</a>.</p>
         <button id="accept-terms" class="terms-button">Accepteren</button>
     </div>
-            <div id="overlay"></div>
-                <div id="popup">
-                    <h1>Welkom op onze website</h1>
-                    <img src="/assets/welkom.jpg" class="pop-img">                    
-                    <button id="close">Sluit</button>
-                </div>
-            <div class="slider">
+    <div id="overlay"></div>
+    <div id="popup">
+        <h1>Welkom op onze website</h1>
+        <img src="/assets/welkom.jpg" class="pop-img">                    
+        <button id="close">Sluit</button>
+    </div>
+    <div class="slider">
         <div class="all-images">
 
         </div>
@@ -56,14 +57,14 @@
             <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
-        <img src="/assets/chinatown1.jpeg" class="img1">
-        <input type="submit" name="submit" value='' class="blue-box"/>
-        <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <img src="/assets/chinatown1.jpeg" class="img1">
+            <input type="submit" name="submit" value='' class="blue-box"/>
+            <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
-        <img src="/assets/scania.jpeg" class="img1">
-        <input type="submit" name="submit" value='' class="blue-box"/>
-        <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <img src="/assets/scania.jpeg" class="img1">
+            <input type="submit" name="submit" value='' class="blue-box"/>
+            <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
     </div>
     <div class="row1">
@@ -71,30 +72,6 @@
             <img src="/assets/reclame.png" class="reclame">
         </div>
     </div>
-
-    <style>
-    /* Add some basic styling */
-    body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-    }
-    #searchBar {
-        margin-bottom: 20px;
-    }
-    #searchInput {
-        padding: 10px;
-        width: 300px;
-        font-size: 16px;
-    }
-    .item {
-        padding: 10px;
-        border: 1px solid #ddd;
-        margin-bottom: 5px;
-    }
-</style>
-</head>
-<body>
-
 <input type="text" id="searchInput" placeholder="Search for items..." onkeyup="filterItems()">
 
 <div id="itemList">
@@ -154,7 +131,7 @@
                 <p>nieuws</p>
                 <a href="/pages/login.php">Login</a>
                 <a href="/pages/register.php">Register</a>
-                <p1>Terms Of Service</p1>
+                <p>Terms Of Service</p>
             </div>
         </div>
         <div class="column">
@@ -169,4 +146,4 @@
     </div>
     <script src="js/main.jsx"></script>
     </body>
-</header>
+</html>
