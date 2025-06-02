@@ -28,7 +28,6 @@
             $email = htmlspecialchars($_POST['email']);
             $bericht = htmlspecialchars($_POST['bericht']);
             echo "<p>Bedankt voor je bericht, $naam! We nemen zo snel mogelijk contact met je op.</p>";
-            // Hier kun je eventueel de gegevens opslaan of mailen
         }
         ?>
     </div>
