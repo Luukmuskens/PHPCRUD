@@ -75,7 +75,7 @@
 <input type="text" id="searchInput" placeholder="Search for items..." onkeyup="filterItems()">
 
 <div id="itemList">
-    <div class="item">KopenHagen</div>
+    <div class="item">Kopenhagen</div>
     <div class="item">Brussel</div>
     <div class="item">Berlijn</div>
     <div class="item">Rome</div>
