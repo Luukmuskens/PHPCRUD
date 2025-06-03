@@ -41,9 +41,9 @@
                 Ons Team: </p>
             </div>
             <div class="mid-text1">
-                <p>Luuk (18 jaar) -   Woont in Wijchen. Luuk heeft veel tijd gestoken in het ontwerp van de site en zorgt ervoor dat het er geweldig uitziet.</p>
-                <p>Mate (18 jaar) -   Woont in Beuningen. Quinn werkt vooral aan de front-end en een beetje aan de back-end van de site.</p>
-                <p>Joey (18 jaar) -   Woont in Nijmegen. Jop werkt aan zowel de front-end als de back-end, en zorgt ervoor dat alles goed samenwerkt.</p>
+                <p>Mate (18 jaar) -   Woont in Gennep. Mate heeft veel tijd gestoken in het ontwerp van de site en zorgt ervoor dat het er geweldig uitziet.</p>
+                <p>Luuk (18 jaar) -   Woont in Wijchen. Luuk werkt vooral aan de front-end en een beetje aan de back-end van de site.</p>
+                <p>Joey (18 jaar) -   Woont in Wijchen. Joey werkt aan zowel de front-end als de back-end, en zorgt ervoor dat alles goed samenwerkt.</p>
             </div>
             <div class="mid-text1">
                 <p>Ons doel is om een gebruiksvriendelijke boekingssite te maken die het boeken van vakanties eenvoudig en leuk maakt. 
