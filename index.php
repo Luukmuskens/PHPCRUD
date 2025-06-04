@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BigBootyLatinas</title>
+        <title>ASCR</title>
+
         <link rel="stylesheet" href="css/main.css" >
 </head>
 <body>
@@ -11,7 +12,9 @@
         <div class="nav">
             <div class="left-75">
                 <div class="name">
-                    <img src="/assets/" class="kook">
+                    <div class="center-content">
+                        <img src="/assets/" class="kook">
+                    </div>
                 </div>
             </div>
             <div class="right-20">
