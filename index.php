@@ -11,7 +11,9 @@
         <div class="nav">
             <div class="left-75">
                 <div class="name">
-                    <img src="/assets/" class="kook">
+                    <div class="center-content">
+                        <img src="/assets/" class="kook">
+                    </div>
                 </div>
             </div>
             <div class="right-20">
