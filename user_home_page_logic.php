@@ -4,40 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="css/main.css" >
+        <link rel="stylesheet" href="/css/main.css" >
     </head>
     <header>
         <div class="nav">
             <div class="left-75">
                 <div class="name">
-                    <img src="/assets/" class="kook">
+                    <img src="/assets/ASCR" class="kook">
                 </div>
             </div>
             <div class="right-20">
                 <div class="buttons">
                     <a href="#" class="Items">Home</a>     
-                    <a href="/pages/overons.php" class= "Items">Over ons</a>
-                    <a href="/pages/reizen.php" class= "Items">Reizen</a>     
-                    <a href="/pages/contact.php" class="Items">Contact</a>     
+                    <a href="/pages/over_ons_user.php" class= "Items">Over ons</a>
+                    <a href="/pages/reizen_user.php" class= "Items">Reizen</a>     
+                    <a href="/pages/user_page.php" class="Items">User</a>     
                 </div>
             </div>
             <div class="right-5">
                 <div class="buttons">
-                    <a href="/pages/login.php" class="Items">Login</a>   
-                </div>
+                <a href="logout.php"class="logoutt">Loguit</a>                 
+            </div>
             </div>
         </div>
         <body>
-        <div id="terms-popup" class="terms-popup">
-        <p>Door deze website te gebruiken, gaat u akkoord met onze <a href="/pages/terms.html" target="_blank">algemene voorwaarden</a>.</p>
-        <button id="accept-terms" class="terms-button">Accepteren</button>
-    </div>
-            <div id="overlay"></div>
-                <div id="popup">
-                    <h1>Welkom op onze website</h1>
-                    <img src="/assets/welkom.jpg" class="pop-img">                    
-                    <button id="close">Sluit</button>
-                </div>
             <div class="slider">
         <div class="all-images">
 
@@ -71,66 +61,6 @@
             <img src="/assets/reclame.png" class="reclame">
         </div>
     </div>
-
-    <style>
-    /* Add some basic styling */
-    body {
-        font-family: Arial, sans-serif;
-        padding: 20px;
-    }
-    #searchBar {
-        margin-bottom: 20px;
-    }
-    #searchInput {
-        padding: 10px;
-        width: 300px;
-        font-size: 16px;
-    }
-    .item {
-        padding: 10px;
-        border: 1px solid #ddd;
-        margin-bottom: 5px;
-    }
-</style>
-</head>
-<body>
-
-<input type="text" id="searchInput" placeholder="Search for items..." onkeyup="filterItems()">
-
-<div id="itemList">
-    <div class="item">KopenHagen</div>
-    <div class="item">Brussel</div>
-    <div class="item">Berlijn</div>
-    <div class="item">Rome</div>
-    <div class="item">Warschau</div>
-    <div class="item">Stockholm</div>
-    <div class="item">Munchen</div>
-    <div class="item">Barcelona</div>
-    <div class="item">Madrid</div>
-    <div class="item">Zurich</div>
-    <div class="item">Wenen</div>
-    <div class="item">Amsterdam</div>
-</div>
-
-<script>
-    function filterItems() {
-        // Get the input value
-        let input = document.getElementById('searchInput').value.toLowerCase();
-        // Get the list of items
-        let items = document.getElementsByClassName('item');
-
-        // Loop through the items and hide those that don't match the search query
-        for (let i = 0; i < items.length; i++) {
-            let item = items[i];
-            if (item.innerHTML.toLowerCase().indexOf(input) > -1) {
-                item.style.display = "";
-            } else {
-                item.style.display = "none";
-            }
-        }
-    }
-</script>
-
     <div class="feet">
         <h1>Wil je op de hoogte blijven?</h1>
         <h4>Vul dan hier je email in voor weekelijkse updates</h4>
