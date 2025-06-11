@@ -90,6 +90,23 @@
     <div class="item">Zurich</div>
     <div class="item">Wenen</div>
     <div class="item">Amsterdam</div>
+    <div class="item">Parijs</div>
+    <div class="item">Londen</div>
+    <div class="item">Lissabon</div>
+    <div class="item">Dublin</div>
+    <div class="item">Oslo</div>
+    <div class="item">Helsinki</div>
+    <div class="item">Prague</div>
+    <div class="item">Budapest</div>
+    <div class="item">Krakow</div>
+    <div class="item">Valencia</div>
+    <div class="item">Florence</div>
+    <div class="item">Milan</div>
+    <div class="item">Catania</div>
+    <div class="item">Naples</div>
+    <div class="item">Athens</div>
+    <div class="item">Istanbul</div>
+    <div class="item">Lisbon</div>
 </div>
 
 <script>
