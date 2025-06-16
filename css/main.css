@@ -18,6 +18,9 @@ body {
     background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
     color: var(--navy);
     font-family: 'Segoe UI', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Header styling */
@@ -209,4 +212,16 @@ body {
         background: linear-gradient(90deg, var(--red) 60%, var(--light-blue) 100%);
         color: var(--white);
     }
+}
+
+.terms-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
