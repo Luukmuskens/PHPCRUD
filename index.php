@@ -13,7 +13,7 @@
             <div class="left-75">
                 <div class="name">
                     <div class="center-content">
-                        <img src="images/header-image.png" class="kook">
+                        <img src="images/header-image.png" class="kook" width="100%">
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
     <div id="overlay"></div>
     <div id="popup">
         <h1>Welkom op onze website</h1>
-        <img src="/assets/welkom.jpg" class="pop-img">                    
+        <img src="images/tokyo.png" class="pop-img" width="40%" height="20%">                    
         <button id="close">Sluit</button>
     </div>
     <div class="slider">
@@ -55,17 +55,17 @@
     </div>
     <div class="row1">
         <div class="box">
-            <img src="/assets/chinatown.jpeg" class="img1">
+            <img src="images/ukraine.png" class="img1" width="30%" height="100px">
             <input type="submit" name="submit" value='' class="blue-box"/>
             <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
-            <img src="/assets/chinatown1.jpeg" class="img1">
+            <img src="images/america.png" class="img1" width="30%" height="100px">
             <input type="submit" name="submit" value='' class="blue-box"/>
             <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
-            <img src="/assets/scania.jpeg" class="img1">
+            <img src="images/griekenland.png" class="img1" width="30%" height="100px">
             <input type="submit" name="submit" value='' class="blue-box"/>
             <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
