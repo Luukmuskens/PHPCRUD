@@ -13,7 +13,7 @@
             <div class="left-75">
                 <div class="name">
                     <div class="center-content">
-                        <img src="/assets/" class="kook">
+                        <img src="images/header-image.png" class="kook">
                     </div>
                 </div>
             </div>
