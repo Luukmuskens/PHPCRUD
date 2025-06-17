@@ -19,7 +19,7 @@ $userID=$_GET['id'];
     <div class="nav">
         <div class="left-75">
             <div class="name">
-                <img src="/assets/north travel logo.png" class="kook">
+                <img src="/assets/.png" class="kook">
             </div>
         </div>
         <div class="right-20">
