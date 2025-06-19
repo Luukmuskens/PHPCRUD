@@ -8,7 +8,7 @@ $userID=$_GET['id'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/luuk.css" >
+    <link rel="stylesheet" href="/css/main.css" >
 </head>
 <?php
 
@@ -19,7 +19,7 @@ $userID=$_GET['id'];
     <div class="nav">
         <div class="left-75">
             <div class="name">
-                <img src="/assets/north travel logo.png" class="kook">
+                <img src="/assets/.png" class="kook">
             </div>
         </div>
         <div class="right-20">
