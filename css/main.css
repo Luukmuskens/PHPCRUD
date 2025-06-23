@@ -15,18 +15,12 @@ body {
 
 /* Background and font */
 body {
-<<<<<<< HEAD
   background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
   color: var(--navy);
   font-family: "Segoe UI", "Arial", sans-serif;
-=======
-    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
-    color: var(--navy);
-    font-family: 'Segoe UI', 'Arial', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
->>>>>>> main
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header styling */
@@ -190,6 +184,9 @@ all-images {
   height: auto;
 }
 
+.reis { background: #fff; margin: 20px; padding: 10px; border-radius: 8px; width: 250px; float: left; }
+.reis img { width: 100%; height: 150px; object-fit: cover; }
+
 @media print {
   body {
     background: none;
@@ -212,7 +209,6 @@ all-images {
 }
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-<<<<<<< HEAD
   body {
     background: linear-gradient(135deg, var(--navy) 0%, var(--light-blue) 100%);
     color: var(--white);
@@ -232,35 +228,15 @@ all-images {
     color: var(--white);
   }
 }
-=======
-    body {
-        background: linear-gradient(135deg, var(--navy) 0%, var(--light-blue) 100%);
-        color: var(--white);
-    }
-    header, footer {
-        background: var(--navy);
-        color: var(--white);
-    }
-    .card {
-        background: var(--navy);
-        border: 2px solid var(--light-blue);
-        box-shadow: 0 8px 24px rgba(255,255,255,0.10);
-    }
-    .button {
-        background: linear-gradient(90deg, var(--red) 60%, var(--light-blue) 100%);
-        color: var(--white);
-    }
-}
 
 .terms-popup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .popup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
->>>>>>> main
