@@ -149,8 +149,8 @@
             <div class="info-text">
                 <h1>Website</h1>
                 <p>nieuws</p>
-                <a href="/pages/login.php">Login</a>
-                <a href="/pages/register.php">Register</a>
+                <a href="/login.php">Login</a>
+                <a href="/register.php">Register</a>
                 <p>Terms Of Service</p>
             </div>
         </div>
