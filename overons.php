@@ -68,7 +68,9 @@
         <h4>Vul dan hier je email in voor weekelijkse updates</h4>
         <div class="hoogte">
         <input type="text" placeholder=" vul hier je mail in" class="mail">
-        <button type="submit" class="mail">Send</button>
+        <a href="/aangemeld.php" class="mail-link">
+            <button id="close">send</button>
+        </a>
         </div>
     </div>
     <div class="feet1">
