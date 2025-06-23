@@ -26,20 +26,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <title>Registreren</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
- <style>
-        body { font-family: Arial, sans-serif;  text-align: center; padding-top: 50px; }
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/main.css" >
+    </head>
+    <style>
+        body { font-family: Arial, sans-serif; background: ##1d3557; text-align: center; padding-top: 50px; }
         .container { background: #fff; padding: 30px; border-radius: 8px; display: inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
         a { color: #3498db; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
     </style>
-    <header>
+    <body>
+       <header>
         <div class="nav">
             <div class="left-75">
                 <div class="name">
@@ -50,37 +51,83 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div class="right-20">
                 <div class="buttons">
-                    <a href="/index.php" class="Items">Home</a>
-                    <a href="/overons.php" class="Items">Over ons</a>
-                    <a href="/reizen.php" class="Items">Reizen</a>
-                    <a href="/contact.php" class="Items">Contact</a>
+                    <a href="/index.php" class="Items">Home</a>     
+                    <a href="/overons.php" class= "Items">Over ons</a>
+                    <a href="/reizen.php" class= "Items">Reizen</a>     
+                    <a href="/contact.php" class="Items">Contact</a>     
                 </div>
             </div>
             <div class="right-5">
                 <div class="buttons">
-                    <a href="/login.php" class="Items">Login</a>
-                    <a href="/register.php" class="Items">Registreren</a>
+                    <a href="/login.php" class="Items">Login</a>   
                 </div>
             </div>
         </div>
     </header>
-    <form class="form" autocomplete="off">
+        <form class="form" autocomplete="off">
           <div class="control">
-        <h2>Registreren</h2>
-        <?php if ($errors): ?>
-            <div class="errors">
-                <?php foreach ($errors as $error): ?>
-                    <div><?= htmlspecialchars($error) ?></div>
-                <?php endforeach; ?>
+            <h1>Register here</h1>
+          </div>
+          <div class="control block-cube block-input">
+            <input name="username" type="text" placeholder="Username" />
+            <div class="bg-top">
+              <div class="bg-inner"></div>
             </div>
-        <?php endif; ?>
-        <form method="post" autocomplete="off">
-            <input type="text" name="username" placeholder="Gebruikersnaam" value="<?= htmlspecialchars($_POST['username'] ?? '') ?>" required>
-            <input type="password" name="password" placeholder="Wachtwoord" required>
-            <input type="password" name="confirm" placeholder="Bevestig wachtwoord" required>
-            <button type="submit">Registreren</button>
+            <div class="bg-right">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+              <div class="bg-inner"></div>
+            </div>
+          </div>
+          <div class="control block-cube block-input">
+            <input name="password" type="password" placeholder="Password" />
+            <div class="bg-top">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg-right">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+              <div class="bg-inner"></div>
+            </div>
+          </div>
+
+           <div class="control block-cube block-input">
+            <input name="password" type="password" placeholder=" Repeat Password" />
+            <div class="bg-top">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg-right">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+              <div class="bg-inner"></div>
+            </div>
+          </div>
+
+          <button class="btn block-cube block-cube-hover" type="button">
+            <div class="bg-top">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg-right">
+              <div class="bg-inner"></div>
+            </div>
+            <div class="bg">
+              <div class="bg-inner"></div>
+            </div>
+             <div class="buttons">
+            <a href="/registerCheck.php" class="Items">register</a>   
+            </div>
+          </button>
+          <div class="credits">
+            <a href="/login.php" target="_blank">
+              click here to login :)
+            </a>
+          </div>
         </form>
-        <a class="login-link" href="login.php">Al een account? Inloggen</a>
-    </div>
-</body>
+        <?php
+        echo "Register page loaded successfully.";
+        ?>
+    </body>
 </html>
