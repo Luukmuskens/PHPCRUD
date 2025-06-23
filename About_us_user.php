@@ -42,7 +42,7 @@
             </div>
             <div class="mid-text1">
                 <p>Luuk (18 jaar) -   Woont in Wijchen. Luuk heeft veel tijd gestoken in het ontwerp van de site en zorgt ervoor dat het er geweldig uitziet.</p>
-                <p>Mate (18 jaar) -   Woont in Gennep. Mate werkt vooral aan de front-end en een beetje aan de back-end van de site.</p>
+                <p>Mate (17 jaar) -   Woont in Gennep. Mate werkt vooral aan de front-end en een beetje aan de back-end van de site.</p>
                 <p>Joey (18 jaar) -   Woont in Wijchen. Joey werkt aan zowel de front-end als de back-end, en zorgt ervoor dat alles goed samenwerkt.</p>
             </div>
             <div class="mid-text1">
