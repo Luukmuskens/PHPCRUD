@@ -1,212 +1,224 @@
 /* Basic CSS reset */
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --red: #e63946;
-    --white: #ffffff;
-    --navy: #1d3557;
-    --light-blue: #a8dadc;
-    --accent-yellow: #ffe066;
+  --red: #e63946;
+  --white: #ffffff;
+  --navy: #1d3557;
+  --light-blue: #a8dadc;
+  --accent-yellow: #ffe066;
 }
 
 /* Background and font */
 body {
-    background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
-    color: var(--navy);
-    font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+  color: var(--navy);
+  font-family: "Segoe UI", "Arial", sans-serif;
 }
 
 /* Header styling */
 header {
-    background: var(--navy);
-    color: var(--white);
-    padding: 1.5rem 0;
-    text-align: center;
-    letter-spacing: 2px;
-    box-shadow: 0 4px 12px rgba(29,53,87,0.15);
-    border-bottom: 4px solid var(--red);
+  background: var(--navy);
+  color: var(--white);
+  padding: 1.5rem 0;
+  text-align: center;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 12px rgba(29, 53, 87, 0.15);
+  border-bottom: 4px solid var(--red);
 }
 
 /* Anime-style card */
 .card {
-    background: var(--white);
-    border: 2px solid var(--navy);
-    border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(29,53,87,0.10);
-    margin: 2rem auto;
-    max-width: 400px;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.2s;
+  background: var(--white);
+  border: 2px solid var(--navy);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(29, 53, 87, 0.1);
+  margin: 2rem auto;
+  max-width: 400px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
 }
 .card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 16px 32px rgba(230,57,70,0.15);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 32px rgba(230, 57, 70, 0.15);
 }
 
 /* Anime accent: sparkle */
 .card::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 32px;
-    height: 32px;
-    background: url('https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2728.png') no-repeat center/contain;
-    opacity: 0.7;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: url("https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2728.png")
+    no-repeat center/contain;
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 /* Buttons */
 .button {
-    background: linear-gradient(90deg, var(--red) 60%, var(--light-blue) 100%);
-    color: var(--white);
-    border: none;
-    border-radius: 12px;
-    padding: 0.75rem 2rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(29,53,87,0.10);
-    transition: background 0.2s, transform 0.2s;
+  background: linear-gradient(90deg, var(--red) 60%, var(--light-blue) 100%);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(29, 53, 87, 0.1);
+  transition: background 0.2s, transform 0.2s;
 }
 .button:hover {
-    background: linear-gradient(90deg, var(--navy) 60%, var(--red) 100%);
-    transform: scale(1.05) rotate(-2deg);
+  background: linear-gradient(90deg, var(--navy) 60%, var(--red) 100%);
+  transform: scale(1.05) rotate(-2deg);
 }
 
 /* Anime-style border highlight */
 .anime-border {
-    border: 3px dashed var(--accent-yellow);
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1rem 0;
-    background: rgba(168,218,220,0.15);
+  border: 3px dashed var(--accent-yellow);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: rgba(168, 218, 220, 0.15);
 }
 
 /* Headings */
-h1, h2, h3 {
-    font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
-    color: var(--red);
-    text-shadow: 2px 2px 0 var(--light-blue), 4px 4px 0 var(--navy);
-    margin-bottom: 0.5em;
+h1,
+h2,
+h3 {
+  font-family: "Comic Neue", "Comic Sans MS", cursive, sans-serif;
+  color: var(--red);
+  text-shadow: 2px 2px 0 var(--light-blue), 4px 4px 0 var(--navy);
+  margin-bottom: 0.5em;
 }
 
 /* Links */
 a {
-    color: var(--navy);
-    text-decoration: none;
-    border-bottom: 2px dotted var(--red);
-    transition: color 0.2s, border 0.2s;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 2px dotted var(--red);
+  transition: color 0.2s, border 0.2s;
 }
 a:hover {
-    color: var(--red);
-    border-bottom: 2px solid var(--navy);
+  color: var(--red);
+  border-bottom: 2px solid var(--navy);
 }
 
 /* Footer */
 footer {
-    background: var(--navy);
-    color: var(--white);
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 12px rgba(29,53,87,0.15);
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 12px rgba(29, 53, 87, 0.15);
 }
 /* Responsive design */
 @media (max-width: 600px) {
-    .card {
-        padding: 1rem;
-        margin: 1rem;
-    }
-    .button {
-        width: 100%;
-        padding: 1rem;
-    }
-    header, footer {
-        padding: 1rem;
-    }
+  .card {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  .button {
+    width: 100%;
+    padding: 1rem;
+  }
+  header,
+  footer {
+    padding: 1rem;
+  }
 }
 /* Accessibility improvements */
 :focus {
-    outline: 2px solid var(--red);
-    outline-offset: 4px;
+  outline: 2px solid var(--red);
+  outline-offset: 4px;
 }
 :focus-visible {
-    outline: 2px solid var(--navy);
-    outline-offset: 4px;
+  outline: 2px solid var(--navy);
+  outline-offset: 4px;
 }
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body {
-    animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 ::-webkit-scrollbar-track {
-    background: var(--light-blue);
+  background: var(--light-blue);
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--navy);
-    border-radius: 6px;
+  background: var(--navy);
+  border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--red);
+  background: var(--red);
 }
 /* Print styles */
 
+all-images {
+  max-width: 100%;
+  align-items: center;
+  height: auto;
+}
+
 @media print {
-    body {
-        background: none;
-        color: black;
-    }
-    header, footer {
-        display: none;
-    }
-    .card {
-        box-shadow: none;
-        border: 1px solid black;
-    }
-    .button {
-        display: none;
-    }
-    a {
-        text-decoration: underline;
-    }
+  body {
+    background: none;
+    color: black;
+  }
+  header,
+  footer {
+    display: none;
+  }
+  .card {
+    box-shadow: none;
+    border: 1px solid black;
+  }
+  .button {
+    display: none;
+  }
+  a {
+    text-decoration: underline;
+  }
 }
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body {
-        background: linear-gradient(135deg, var(--navy) 0%, var(--light-blue) 100%);
-        color: var(--white);
-    }
-    header, footer {
-        background: var(--navy);
-        color: var(--white);
-    }
-    .card {
-        background: var(--navy);
-        border: 2px solid var(--light-blue);
-        box-shadow: 0 8px 24px rgba(255,255,255,0.10);
-    }
-    .button {
-        background: linear-gradient(90deg, var(--red) 60%, var(--light-blue) 100%);
-        color: var(--white);
-    }
+  body {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--light-blue) 100%);
+    color: var(--white);
+  }
+  header,
+  footer {
+    background: var(--navy);
+    color: var(--white);
+  }
+  .card {
+    background: var(--navy);
+    border: 2px solid var(--light-blue);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+  }
+  .button {
+    background: linear-gradient(90deg, var(--red) 60%, var(--light-blue) 100%);
+    color: var(--white);
+  }
 }

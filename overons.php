@@ -36,9 +36,9 @@
     <body>
     <div class="slider">
         <div class="all-images">
-            <img src="/assets/slider1.jpg" class="slider-image" alt="Slider Image 1">
-            <img src="/assets/slider2.jpg" class="slider-image" alt="Slider Image 2">
-            <img src="/assets/slider3.jpg" class="slider-image" alt="Slider Image 3">
+            <img src="/images/sweden.png" class="slider-image" alt="Slider Image 1">
+            <img src="/images/america.png" class="slider-image" alt="Slider Image 2">
+            <img src="/images/canada.png" class="slider-image" alt="Slider Image 3">
         </div>
     </div>
         <div class="row111">
