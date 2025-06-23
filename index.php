@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="css/main.css" >
 </head>
 <body>
+     <style>
+        body { font-family: Arial, sans-serif;  text-align: center; padding-top: 50px; }
+        .container { background: #fff; padding: 30px; border-radius: 8px; display: inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
     <header>
         <div class="nav">
             <div class="left-75">
@@ -19,15 +25,16 @@
             </div>
             <div class="right-20">
                 <div class="buttons">
-                    <a href="#" class="Items">Home</a>     
-                    <a href="/overons.php" class= "Items">Over ons</a>
-                    <a href="/reizen.php" class= "Items">Reizen</a>     
-                    <a href="/contact.php" class="Items">Contact</a>     
+                    <a href="/index.php" class="Items">Home</a>
+                    <a href="/overons.php" class="Items">Over ons</a>
+                    <a href="/reizen.php" class="Items">Reizen</a>
+                    <a href="/contact.php" class="Items">Contact</a>
                 </div>
             </div>
             <div class="right-5">
                 <div class="buttons">
-                    <a href="/login.php" class="Items">Login</a>   
+                    <a href="/login.php" class="Items">Login</a>
+                    <a href="/register.php" class="Items">Registreren</a>
                 </div>
             </div>
         </div>
@@ -39,7 +46,7 @@
     <div id="overlay"></div>
     <div id="popup">
         <h1>Welkom op onze website</h1>
-        <img src="images/ANIME.png" class="pop-img" width="40%" height="20%">
+        <img src="https://i.gifer.com/4Snj.gif" class="pop-img" width="40%" height="5%">
         <button id="close">Sluit</button>
     </div>
     <div class="slider">
@@ -133,6 +140,9 @@
         <h4>Vul dan hier je email in voor weekelijkse updates</h4>
         <div class="hoogte">
         <input type="text" placeholder=" vul hier je mail in" class="mail">
+        <a href="/aangemeld.php" class="mail-link">
+            <button id="close">send</button>
+        </a>
         </div>
     </div>
     <div class="feet1">
