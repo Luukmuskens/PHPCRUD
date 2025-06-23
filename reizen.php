@@ -1,42 +1,63 @@
 <?php
-// Map met afbeeldingen
-$map = 'images/';
-$bestanden = glob($map . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
+include 'conn.php';
 
-// Extra stukje PHP, niet gebaseerd op de database
-$welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen gebaseerd op onze afbeeldingen.";
+// Welkom tekst
+$welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen gebaseerd op onze database.";
 ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Reizen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onze Reizen</title>
+    <link rel="stylesheet" href="/css/jop.css">
+    <link rel="stylesheet" href="/css/main.css">
     <style>
-        * { box-sizing: border-box; }
-        body { font-family: Arial; background:rgb(112, 157, 220); }
-        .reis { background: #fff; margin: 20px; padding: 10px; border-radius: 8px; width: 250px; float: left; }
-        .reis img { width: 100%; height: 150px; object-fit: cover; }
-        .titel { font-weight: bold; margin-top: 10px; }
-        .buttons {
+        /* Extra styles from original reizen.php if needed */
+        .container-reizen-page {
             display: flex;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: flex-start;
         }
-        .Items {
-            background:rgb(219, 52, 52);
-            color: #fff;
-            padding: 8px 16px;
-            border-radius: 4px;
+        .container-reizen {
+            background: #fff;
+            border-radius: 8px;
+            margin: 10px;
+            width: 350px;
             text-decoration: none;
-            transition: background 0.2s;
+            color: inherit;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: box-shadow 0.2s;
         }
-        .Items:hover {
-            background: #217dbb;
+        .container-reizen:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .blah-box {
+            padding: 15px;
+        }
+        .rijzen-fotos {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .container-name h2 {
+            margin: 10px 0 5px 0;
+        }
+        .container-info h4 {
+            margin: 0 0 10px 0;
+            font-weight: normal;
+        }
+        .container-button {
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-     <header>
-        <div class="nav">
+<header>
+    <div class="nav">
+         <div class="nav">
             <div class="left-75">
                 <div class="name">
                     <div class="center-content">
@@ -44,37 +65,87 @@ $welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen g
                     </div>
                 </div>
             </div>
-            <div class="right-20">
-                <div class="buttons">
-                    <a href="/index.php" class="Items">Home</a>     
-                    <a href="/overons.php" class= "Items">Over ons</a>
-                    <a href="/reizen.php" class= "Items">Reizen</a>     
-                    <a href="/contact.php" class="Items">Contact</a>     
-                </div>
-            </div>
-            <div class="right-5">
-                <div class="buttons">
-                    <a href="/login.php" class="Items">Login</a>   
-                </div>
-            </div>
+        <div class="left-75">
         </div>
-    </header>
-    <h1>Onze Reizen</h1>
-    <p><?php echo $welkom_tekst; ?></p>
-    <?php
-    if (count($bestanden) == 0) {
-        echo "<p>Geen reizen gevonden.</p>";
-    } else {
-        foreach ($bestanden as $bestand) {
-            $naam = basename($bestand);
-            $titel = ucfirst(pathinfo($naam, PATHINFO_FILENAME));
-            echo '<div class="reis">';
-            echo '<img src="' . $map . $naam . '" alt="' . $titel . '">';
-            echo '<div class="titel">' . $titel . '</div>';
-            echo '<div>Ontdek de reis naar ' . $titel . '.</div>';
-            echo '</div>';
-        }
-    }
-    ?>
+        <div class="right-20">
+            <div class="buttons">
+            <a href="/index.php" class="Items">Home</a>     
+            <a href="/overons.php" class= "Items">Over ons</a>
+            <a href="/reizen.php" class= "Items">Reizen</a>     
+            <a href="/contact.php" class="Items">Contact</a>     
+        </div>
+    </div>
+    <div class="right-5">
+        <div class="buttons">
+            <a href="/login.php" class="Items">Login</a>   
+        </div>
+    </div>
+    </div>
+</header>
+<div class="tussen-stuk"></div>
+
+<h1>Onze Reizen</h1>
+<p><?php echo $welkom_tekst; ?></p>
+
+<div class="container-reizen-page">
+<?php
+$stmt = $connection->query("SELECT products.name, products.id, products_Info.omschrijving, products_Info.omschrijving_2, products_Info.omschrijving_3
+    FROM products
+    INNER JOIN products_Info
+    ON products.id=products_Info.id");
+while ($row = $stmt->fetch()) {
+    echo '<a class="container-reizen" href="product-info.php?id=' . $row['id'] . '">';
+    echo '<div class="blah-box">';
+    echo '<img class="rijzen-fotos" src="../assets/chinatown1.jpeg" alt="">';
+    echo '<div class="text-menu">';
+    echo '<div class="container-name">';
+    echo '<h2>' . htmlspecialchars($row['name']) . "</h2>";
+    echo '</div>';
+    echo '<div class="container-info">';
+    echo '<h4>';
+    echo htmlspecialchars($row['omschrijving']) . "<br/>\n";
+    echo htmlspecialchars($row['omschrijving_2']) . "<br/>\n";
+    echo htmlspecialchars($row['omschrijving_3']) . "<br/>\n";
+    echo '</h4>';
+    echo '</div>';
+    echo '<div class="container-button">';
+    // Button or link can go here
+    echo '</div>';
+    echo '</div>'; // text-menu
+    echo '</div>'; // blah-box
+    echo '</a>';
+}
+?>
+</div>
+
+<div class="tussen-stuk"></div>
+<div class="feet">
+    <h1>Wil je op de hoogte blijven?</h1>
+    <h4>Vul dan hier je email in voor weekelijkse updates</h4>
+    <div class="hoogte">
+        <input type="text" placeholder=" vul hier je mail in" class="mail">
+    </div>
+</div>
+<div class="feet1">
+    <div class="column">
+        <div class="info-text">
+            <h1>Opleiding</h1>
+            <p>Roc-Nijmegen</p>
+            <p>Technovium</p>
+            <p>Software Development</p>
+            <p>Heyendaalseweg 98</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="info-text">
+            <h1>Website</h1>
+            <p>nieuws</p>
+            <a href="/pages/login.php">Login</a>
+            <a href="/pages/register.php">Register</a>
+            <p1>Terms Of Service</p1>
+        </div>
+    </div>
+</div>
+<script src="js/main.jsx"></script>
 </body>
 </html>
