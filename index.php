@@ -33,7 +33,7 @@
         </div>
     </header>
     <div id="terms-popup" class="terms-popup">
-        <p>To use this website, you have to confirm our Terms of use page <a href="/terms.html" target="_blank">Terms of use</a>.</p>
+        <p>To use this website, you have to confirm our Terms of use page <a href="/terms.php" target="_blank">Terms of use</a>.</p>
         <button id="accept-terms" class="terms-button">Accept</button>
     </div>
     <div id="overlay"></div>
