@@ -20,20 +20,20 @@
             <div class="right-20">
                 <div class="buttons">
                     <a href="#" class="Items">Home</a>     
-                    <a href="/pages/overons.php" class= "Items">Over ons</a>
-                    <a href="/pages/reizen.php" class= "Items">Reizen</a>     
-                    <a href="/pages/contact.php" class="Items">Contact</a>     
+                    <a href="/overons.php" class= "Items">Over ons</a>
+                    <a href="/reizen.php" class= "Items">Reizen</a>     
+                    <a href="/contact.php" class="Items">Contact</a>     
                 </div>
             </div>
             <div class="right-5">
                 <div class="buttons">
-                    <a href="/pages/login.php" class="Items">Login</a>   
+                    <a href="/login.php" class="Items">Login</a>   
                 </div>
             </div>
         </div>
     </header>
     <div id="terms-popup" class="terms-popup">
-        <p>Door deze website te gebruiken, gaat u akkoord met onze <a href="/pages/terms.html" target="_blank">algemene voorwaarden</a>.</p>
+        <p>Door deze website te gebruiken, gaat u akkoord met onze <a href="/terms.html" target="_blank">algemene voorwaarden</a>.</p>
         <button id="accept-terms" class="terms-button">Accepteren</button>
     </div>
     <div id="overlay"></div>

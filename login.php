@@ -48,8 +48,8 @@
             <span class="text">Log In</span>
           </button>
           <div class="credits">
-            <a href="https://codepen.io/marko-zub/" target="_blank">
-              My other codepens
+            <a href="https://github.com/Luukmuskens" target="_blank">
+              click here for more information and fun :)
             </a>
           </div>
         </form>
