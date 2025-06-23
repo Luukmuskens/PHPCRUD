@@ -22,11 +22,11 @@
     <script>
         // Redirect to the user home page after 3 seconds
         setTimeout(function() {
-            window.location.href = "/user_home_page.php";
+            window.location.href = "/index.php";
         }, 3000);
     </script>
     <p>Je wordt automatisch doorgestuurd naar je gebruikerspagina.</p>
-    <p>Als je niet automatisch wordt doorgestuurd, klik dan <a href="/user_home_page.php">hier</a>.</p>
+    <p>Als je niet automatisch wordt doorgestuurd, klik dan <a href="/index.php">hier</a>.</p>
     </div>
     <script src="/js/main.js" defer></script>
 </body>
