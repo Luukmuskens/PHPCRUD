@@ -17,13 +17,13 @@
             <div class="buttons">
             <a href="/index.php" class="Items">Home</a>     
             <a href="#" class= "Items">Over ons</a>
-            <a href="/pages/reizen.php" class= "Items">Reizen</a>     
-            <a href="/pages/contact.php" class="Items">Contact</a>     
+            <a href="/reizen_user.php" class= "Items">Reizen</a>     
+            <a href="/contact.php" class="Items">Contact</a>     
         </div>
     </div>
     <div class="right-5">
         <div class="buttons">
-            <a href="/pages/login.php" class="Items">Login</a>   
+            <a href="/login.php" class="Items">Login</a>   
         </div>
     </div>
     </div>
@@ -55,6 +55,7 @@
         <h4>Vul dan hier je email in voor weekelijkse updates</h4>
         <div class="hoogte">
         <input type="text" placeholder=" vul hier je mail in" class="mail">
+        <button type="submit" class="mail">Send</button>
         </div>
     </div>
     <div class="feet1">
