@@ -8,10 +8,15 @@
 </head>
 <header>
     <div class="nav">
-        <div class="left-75">
-            <div class="name">
-                <img src="/assets/north travel logo.png" class="kook">
+         <div class="nav">
+            <div class="left-75">
+                <div class="name">
+                    <div class="center-content">
+                        <img src="images/header-image.png" class="kook" width="100%">
+                    </div>
+                </div>
             </div>
+        <div class="left-75">
         </div>
         <div class="right-20">
             <div class="buttons">
@@ -29,9 +34,14 @@
     </div>
     <body>
     <div class="slider">
-            
+        <div class="all-images">
+            <img src="/assets/slider1.jpg" class="slider-image" alt="Slider Image 1">
+            <img src="/assets/slider2.jpg" class="slider-image" alt="Slider Image 2">
+            <img src="/assets/slider3.jpg" class="slider-image" alt="Slider Image 3">
+        </div>
     </div>
         <div class="row111">
+           
 
         </div>
         <div class="container-text">

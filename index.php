@@ -33,8 +33,8 @@
         </div>
     </header>
     <div id="terms-popup" class="terms-popup">
-        <p>Door deze website te gebruiken, gaat u akkoord met onze <a href="/terms.html" target="_blank">algemene voorwaarden</a>.</p>
-        <button id="accept-terms" class="terms-button">Accepteren</button>
+        <p>To use this website, you have to confirm our Terms of use page <a href="/terms.html" target="_blank">Terms of use</a>.</p>
+        <button id="accept-terms" class="terms-button">Accept</button>
     </div>
     <div id="overlay"></div>
     <div id="popup">
@@ -57,17 +57,17 @@
         <div class="box">
             <img src="images/ukraine.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <a href="/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
             <img src="images/america.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <a href="/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
             <img src="images/griekenland.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <a href="/reizen.php" class="mayo">Click me</a>   
         </div>
     </div>
     <div class="row1">
