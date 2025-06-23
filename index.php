@@ -82,39 +82,23 @@
             <img src="images/ad.png" class="reclame" width="30%" height="200px">
         </div>
     </div>
-<input type="text" id="searchInput" placeholder="Search for items..." onkeyup="filterItems()">
+         <a
+      href="reizen.php"
+      style="
+        display: inline-block;
+        margin-bottom: 24px;
+        padding: 10px 24px;
+        background: #2a5d84;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.2s;
+      "
+    >
+      &larr; Bekijk onze reizen 
+    </a>
 
-<div id="itemList">
-    <div class="item">Kopenhagen</div>
-    <div class="item">Brussel</div>
-    <div class="item">Berlijn</div>
-    <div class="item">Rome</div>
-    <div class="item">Warschau</div>
-    <div class="item">Stockholm</div>
-    <div class="item">Munchen</div>
-    <div class="item">Barcelona</div>
-    <div class="item">Madrid</div>
-    <div class="item">Zurich</div>
-    <div class="item">Wenen</div>
-    <div class="item">Amsterdam</div>
-    <div class="item">Parijs</div>
-    <div class="item">Londen</div>
-    <div class="item">Lissabon</div>
-    <div class="item">Dublin</div>
-    <div class="item">Oslo</div>
-    <div class="item">Helsinki</div>
-    <div class="item">Prague</div>
-    <div class="item">Budapest</div>
-    <div class="item">Krakow</div>
-    <div class="item">Valencia</div>
-    <div class="item">Florence</div>
-    <div class="item">Milan</div>
-    <div class="item">Catania</div>
-    <div class="item">Naples</div>
-    <div class="item">Athens</div>
-    <div class="item">Istanbul</div>
-    <div class="item">Lisbon</div>
-</div>
 
 <script>
     function filterItems() {
