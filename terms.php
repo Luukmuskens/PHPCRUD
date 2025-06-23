@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Terms & Conditions - Travel Gamers</title>
+    <title>Terms & Conditions - ASCR</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -60,8 +60,8 @@
     <section>
       <h2>4. Liability</h2>
       <p>
-        Travel Gamers is not liable for any damages resulting from the use of
-        our website or services.
+        ACSR is not liable for any damages resulting from the use of our website
+        or services.
       </p>
     </section>
     <section>
