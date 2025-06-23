@@ -45,7 +45,9 @@
             <div class="bg">
               <div class="bg-inner"></div>
             </div>
-            <span class="text">Log In</span>
+             <div class="buttons">
+            <a href="/acc.php" class="Items">Login</a>   
+            </div>
           </button>
           <div class="credits">
             <a href="/register.php" target="_blank">
