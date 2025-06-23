@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="/css/main.css">
     <script src="/js/main.js" defer></script>
 </head>
+ <style>
+        body { font-family: Arial, sans-serif; background: ##1d3557; text-align: center; padding-top: 50px; }
+        .container { background: #fff; padding: 30px; border-radius: 8px; display: inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+    <body>
+       <header>
+        <div class="nav">
+            <div class="left-75">
+                <div class="name">
+                    <div class="center-content">
+                        <img src="images/header-image.png" class="kook" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="right-20">
+                <div class="buttons">
+                    <a href="/index.php" class="Items">Home</a>     
+                    <a href="/overons.php" class= "Items">Over ons</a>
+                    <a href="/reizen.php" class= "Items">Reizen</a>     
+                    <a href="/contact.php" class="Items">Contact</a>     
+                </div>
+            </div>
+            <div class="right-5">
+                <div class="buttons">
+                    <a href="/login.php" class="Items">Login</a>   
+                </div>
+            </div>
+        </div>
+    </header>
 <body>
     <div class="container">
         <h2>Contact ASSR TRAVMOBILE</h2>

@@ -39,7 +39,7 @@
     <div id="overlay"></div>
     <div id="popup">
         <h1>Welkom op onze website</h1>
-        <img src="images/tokyo.png" class="pop-img" width="40%" height="20%">                    
+        <img src="images/ANIME.png" class="pop-img" width="40%" height="20%">
         <button id="close">Sluit</button>
     </div>
     <div class="slider">

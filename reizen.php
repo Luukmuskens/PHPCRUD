@@ -12,52 +12,17 @@ $welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen g
     <title>Onze Reizen</title>
     <link rel="stylesheet" href="/css/jop.css">
     <link rel="stylesheet" href="/css/main.css">
-    <style>
-        /* Extra styles from original reizen.php if needed */
-        .container-reizen-page {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: flex-start;
-        }
-        .container-reizen {
-            background: #fff;
-            border-radius: 8px;
-            margin: 10px;
-            width: 350px;
-            text-decoration: none;
-            color: inherit;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: box-shadow 0.2s;
-        }
-        .container-reizen:hover {
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-        }
-        .blah-box {
-            padding: 15px;
-        }
-        .rijzen-fotos {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px 8px 0 0;
-        }
-        .container-name h2 {
-            margin: 10px 0 5px 0;
-        }
-        .container-info h4 {
-            margin: 0 0 10px 0;
-            font-weight: normal;
-        }
-        .container-button {
-            margin-top: 10px;
-        }
-    </style>
 </head>
 <body>
-<header>
-    <div class="nav">
-         <div class="nav">
+     <style>
+        body { font-family: Arial, sans-serif; background: ##1d3557; text-align: center; padding-top: 50px; }
+        .container { background: #fff; padding: 30px; border-radius: 8px; display: inline-block; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        a { color: #3498db; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
+    <body>
+       <header>
+        <div class="nav">
             <div class="left-75">
                 <div class="name">
                     <div class="center-content">
@@ -65,23 +30,22 @@ $welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen g
                     </div>
                 </div>
             </div>
-        <div class="left-75">
+            <div class="right-20">
+                <div class="buttons">
+                    <a href="/index.php" class="Items">Home</a>     
+                    <a href="/overons.php" class= "Items">Over ons</a>
+                    <a href="/reizen.php" class= "Items">Reizen</a>     
+                    <a href="/contact.php" class="Items">Contact</a>     
+                </div>
+            </div>
+            <div class="right-5">
+                <div class="buttons">
+                    <a href="/login.php" class="Items">Login</a>   
+                </div>
+            </div>
         </div>
-        <div class="right-20">
-            <div class="buttons">
-            <a href="/index.php" class="Items">Home</a>     
-            <a href="/overons.php" class= "Items">Over ons</a>
-            <a href="/reizen.php" class= "Items">Reizen</a>     
-            <a href="/contact.php" class="Items">Contact</a>     
-        </div>
-    </div>
-    <div class="right-5">
-        <div class="buttons">
-            <a href="/login.php" class="Items">Login</a>   
-        </div>
-    </div>
-    </div>
-</header>
+    </header>
+
 <div class="tussen-stuk"></div>
 
 <h1>Onze Reizen</h1>
