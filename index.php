@@ -57,17 +57,17 @@
         <div class="box">
             <img src="images/ukraine.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <a href="/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
             <img src="images/america.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <a href="/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
             <img src="images/griekenland.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/pages/reizen.php" class="mayo">Click me</a>   
+            <a href="/reizen.php" class="mayo">Click me</a>   
         </div>
     </div>
     <div class="row1">
