@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Over Ons</title>
     <link rel="stylesheet" href="/css/main.css" >
 </head>
 <header>
@@ -32,12 +32,13 @@
         </div>
     </div>
     </div>
+</header>
     <body>
     <div class="slider">
         <div class="all-images">
-            <img src="/assets/slider1.jpg" class="slider-image" alt="Slider Image 1">
-            <img src="/assets/slider2.jpg" class="slider-image" alt="Slider Image 2">
-            <img src="/assets/slider3.jpg" class="slider-image" alt="Slider Image 3">
+            <img src="/images/sweden.png" class="slider-image" alt="Slider Image 1">
+            <img src="/images/america.png" class="slider-image" alt="Slider Image 2">
+            <img src="/images/canada.png" class="slider-image" alt="Slider Image 3">
         </div>
     </div>
         <div class="row111">
@@ -48,14 +49,16 @@
             <div class="mid-text1">
                 <h2>Over ons</h2>
                 <p>Wij zijn drie studenten aan het ROC Nijmegen, waar we de opleiding Software Development volgen. Voor ons schoolproject in periode 4 ontwikkelen we een boekingssite voor vakanties.
-                Ons Team: </p>
+                 </p>
             </div>
             <div class="mid-text1">
-                <p>Mate (18 jaar) -   Woont in Gennep. Mate heeft veel tijd gestoken in het ontwerp van de site en zorgt ervoor dat het er geweldig uitziet.</p>
-                <p>Luuk (18 jaar) -   Woont in Wijchen. Luuk werkt vooral aan de front-end en een beetje aan de back-end van de site.</p>
-                <p>Joey (18 jaar) -   Woont in Wijchen. Joey werkt aan zowel de front-end als de back-end, en zorgt ervoor dat alles goed samenwerkt.</p>
+                <h2>Ons Team:</h2>
+                <p>Mate (17 jaar, Eerstejaars student) -   Woont in Gennep. Mate heeft veel tijd gestoken in het ontwerp van de site en zorgt ervoor dat het er geweldig uitziet.</p>
+                <p>Luuk (18 jaar, Eerstejaars student) -   Woont in Wijchen. Luuk werkt vooral aan de front-end en een beetje aan de back-end van de site.</p>
+                <p>Joey (18 jaar, Eerstejaars student) -   Woont in Wijchen. Joey werkt aan zowel de front-end als de back-end, en zorgt ervoor dat alles goed samenwerkt.</p>
             </div>
             <div class="mid-text1">
+                <h2>Onze Doelstelling als Reisbureau</h2>
                 <p>Ons doel is om een gebruiksvriendelijke boekingssite te maken die het boeken van vakanties eenvoudig en leuk maakt. 
                     <p>We zijn enthousiast over dit project en kijken ernaar uit om onze vaardigheden in de praktijk te brengen.</p>
             </div>

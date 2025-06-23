@@ -48,8 +48,8 @@
             <span class="text">Log In</span>
           </button>
           <div class="credits">
-            <a href="https://github.com/Luukmuskens" target="_blank">
-              click here for more information and fun :)
+            <a href="/register.php" target="_blank">
+              click here to register :)
             </a>
           </div>
         </form>
