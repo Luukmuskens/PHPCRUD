@@ -53,32 +53,31 @@ $welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen g
 
 <div class="container-reizen-page">
 <?php
-$stmt = $connection->query("SELECT products.name, products.id, products_Info.omschrijving, products_Info.omschrijving_2, products_Info.omschrijving_3
-    FROM products
-    INNER JOIN products_Info
-    ON products.id=products_Info.id");
-while ($row = $stmt->fetch()) {
-    echo '<a class="container-reizen" href="product-info.php?id=' . $row['id'] . '">';
-    echo '<div class="blah-box">';
-    echo '<img class="rijzen-fotos" src="../assets/chinatown1.jpeg" alt="">';
-    echo '<div class="text-menu">';
-    echo '<div class="container-name">';
-    echo '<h2>' . htmlspecialchars($row['name']) . "</h2>";
-    echo '</div>';
-    echo '<div class="container-info">';
-    echo '<h4>';
-    echo htmlspecialchars($row['omschrijving']) . "<br/>\n";
-    echo htmlspecialchars($row['omschrijving_2']) . "<br/>\n";
-    echo htmlspecialchars($row['omschrijving_3']) . "<br/>\n";
-    echo '</h4>';
-    echo '</div>';
-    echo '<div class="container-button">';
-    // Button or link can go here
-    echo '</div>';
-    echo '</div>'; // text-menu
-    echo '</div>'; // blah-box
-    echo '</a>';
+require_once("db.php");
+
+$db = new db();
+$conn = $db->get_connection();
+$result = [];
+
+$sql = "SELECT * FROM menu";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $search = "%" . $_POST["search"] . "%";
+    $sql = "SELECT * FROM menu WHERE name LIKE :search";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute(['search' => $search]);
+    $result = $stmt->fetchAll();
 }
+
+$template = '
+<div class="gerecht-item space-between column">
+    <div>
+        <h1 class="gerecht-naam">%s</h1>
+        <h2 class="gerecht-beschrijving">%s</h2>
+    </div>
+    <h2 class="gerecht-prijs">€%s</h2>
+</div>
+';
 ?>
 </div>
 
