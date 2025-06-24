@@ -13,7 +13,7 @@
             <div class="left-75">
                 <div class="name">
                     <div class="center-content">
-                        <img src="images/header-image.png" class="kook" width="100%">
+                        <img src="animeImages/header-image.png" class="kook" width="100%">
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
     <div id="overlay"></div>
     <div id="popup">
         <h1>Welkom op onze website</h1>
-        <img src="images/tokyo.png" class="pop-img" width="40%" height="20%">                    
+        <img src="countryImages/tokyo.png" class="pop-img" width="40%" height="20%">                    
         <button id="close">Sluit</button>
     </div>
     <div class="slider">
@@ -55,24 +55,24 @@
     </div>
     <div class="row1">
         <div class="box">
-            <img src="images/ukraine.png" class="img1" width="30%" height="150px">
+            <img src="countryImages/ukraine.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
             <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
-            <img src="images/america.png" class="img1" width="30%" height="150px">
+            <img src="countryImages/america.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
             <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
         <div class="box">
-            <img src="images/griekenland.png" class="img1" width="30%" height="150px">
+            <img src="countryImages/griekenland.png" class="img1" width="30%" height="150px">
             <input type="submit" name="submit" value='' class="blue-box"/>
             <a href="/pages/reizen.php" class="mayo">Click me</a>   
         </div>
     </div>
     <div class="row1">
         <div class="box1">
-            <img src="images/ad.png" class="reclame" width="30%" height="200px">
+            <img src="countryImages/ad.png" class="reclame" width="30%" height="200px">
         </div>
     </div>
 <input type="text" id="searchInput" placeholder="Search for items..." onkeyup="filterItems()">
