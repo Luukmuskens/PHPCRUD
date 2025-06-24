@@ -25,7 +25,7 @@ if (!$_SESSION["is_logged_in"]) {
     <br>
     <br>
     <!-- for adding products: -->
-    <form action="/php/add_menu.php" method="POST">
+    <form action="/add_menu.php" method="POST">
         <h1>Add Product:</h1>
         <label for="name">Name</label>
         <input required type="text" name="name">
@@ -36,7 +36,7 @@ if (!$_SESSION["is_logged_in"]) {
         <input type="submit" value="submit">
     </form>
     <!-- for modifying products: -->
-    <form method="POST" action="/php/modify.php">
+    <form method="POST" action="/modify.php">
             <h1>Modify Product:</h1>
             <label>Product ID:</label>
             <input type="number" name="id" required>
@@ -53,7 +53,7 @@ if (!$_SESSION["is_logged_in"]) {
             <button type="submit" name="add">Modify!</button>
         </form>
         <!-- for deleting products: -->
-        <form method="POST" action="/php/delete.php" class="form center column">
+        <form method="POST" action="/delete.php" class="form center column">
             <h1>Delete Product:</h1>
             <label>Product ID:</label>
             <input type="number" name="id" required>

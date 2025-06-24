@@ -61,6 +61,32 @@ header {
   color: #1d3557;
 }
 
+.gerecht-item {
+    width: 22vw;
+    height: auto;
+    gap: 1vw;
+    background-color: #ffffff;
+    padding: 1vw;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.gerecht-naam {
+    font-size: 1.25vw;
+}
+
+.gerecht-beschrijving {
+    font-size: 0.75vw;
+}
+
+.gerecht-prijs {
+    font-size: 1vw;
+}
+
 /* Anime accent: sparkle */
 .card::after {
   content: "";
