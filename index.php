@@ -29,6 +29,7 @@
                     <a href="/overons.php" class="Items">Over ons</a>
                     <a href="/reizen.php" class="Items">Reizen</a>
                     <a href="/contact.php" class="Items">Contact</a>
+                    <a href="admin/index.php" class="Items">Admin</a>
                 </div>
             </div>
             <div class="right-5">
