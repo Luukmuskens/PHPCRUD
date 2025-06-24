@@ -10,7 +10,6 @@ $welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen g
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Onze Reizen</title>
-    <link rel="stylesheet" href="/css/jop.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
