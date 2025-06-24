@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Terms & Conditions - Travel Gamers</title>
+    <title>Terms & Conditions - ASCR</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 40px;
-        background: #f9f9f9;
+        background: #9bbfcc;
         color: #222;
       }
       h1 {
@@ -19,6 +19,22 @@
     </style>
   </head>
   <body>
+    <a
+      href="index.php"
+      style="
+        display: inline-block;
+        margin-bottom: 24px;
+        padding: 10px 24px;
+        background: #2a5d84;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.2s;
+      "
+    >
+      &larr; Back to Homepage
+    </a>
     <h1>Terms & Conditions</h1>
     <section>
       <h2>1. Introduction</h2>
@@ -44,8 +60,8 @@
     <section>
       <h2>4. Liability</h2>
       <p>
-        Travel Gamers is not liable for any damages resulting from the use of
-        our website or services.
+        ACSR is not liable for any damages resulting from the use of our website
+        or services.
       </p>
     </section>
     <section>
@@ -57,7 +73,7 @@
     </section>
     <p>
       For questions, contact us at
-      <a href="mailto:info@travelgamers.com">info@travelgamers.com</a>.
+      <a href="mailto:info@ASCR.com">info@ASCR.com</a>.
     </p>
   </body>
 </html>
