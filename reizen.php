@@ -52,23 +52,23 @@ $welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen g
 
 <div class="container-reizen-page">
 <?php
-$stmt = $connection->query("SELECT products.name, products.id, products_Info.omschrijving, products_Info.omschrijving_2, products_Info.omschrijving_3
+$stmt = $connection->query("SELECT products.naam, products.id, products.omschrijving, products.bedrag
     FROM products
-    INNER JOIN products_Info
-    ON products.id=products_Info.id");
+    INNER JOIN products
+    ON products.id=products.id");
 while ($row = $stmt->fetch()) {
-    echo '<a class="container-reizen" href="product-info.php?id=' . $row['id'] . '">';
+    echo '<a class="container-reizen" href="products.php?id=' . $row['id'] . '">';
     echo '<div class="blah-box">';
     echo '<img class="rijzen-fotos" src="../assets/chinatown1.jpeg" alt="">';
     echo '<div class="text-menu">';
     echo '<div class="container-name">';
-    echo '<h2>' . htmlspecialchars($row['name']) . "</h2>";
+    echo '<h2>' . htmlspecialchars($row['naam']) . "</h2>";
     echo '</div>';
     echo '<div class="container-info">';
     echo '<h4>';
+    echo htmlspecialchars($row['naam']) . "<br/>\n";
     echo htmlspecialchars($row['omschrijving']) . "<br/>\n";
-    echo htmlspecialchars($row['omschrijving_2']) . "<br/>\n";
-    echo htmlspecialchars($row['omschrijving_3']) . "<br/>\n";
+    echo htmlspecialchars($row['bedrag']) . "<br/>\n";
     echo '</h4>';
     echo '</div>';
     echo '<div class="container-button">';
