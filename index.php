@@ -47,7 +47,7 @@
     <div id="overlay"></div>
     <div id="popup">
         <h1>Welkom op onze website</h1>
-        <img src="countryImages/tokyo.png" class="pop-img" width="40%" height="20%">                    
+        <img src="countryImages/tokyo.png" class="pop-img" width="75%" height="75%">                    
         <button id="close">Sluit</button>
     </div>
     <div class="slider">
@@ -63,19 +63,16 @@
     </div>
     <div class="row1">
         <div class="box">
-            <img src="countryImages/ukraine.png" class="img1" width="30%" height="150px">
-            <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/reizen.php" class="mayo">Click me</a>   
+            <img src="countryImages/ukraine.png" class="img1" width="80%" height="250px">
+            <a href="/reizen.php" >Click me</a>   
         </div>
         <div class="box">
-            <img src="countryImages/america.png" class="img1" width="30%" height="150px">
-            <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/reizen.php" class="mayo">Click me</a>   
+            <img src="countryImages/america.png" class="img1" width="80%" height="250px">
+            <a href="/reizen.php" >Click me</a>   
         </div>
         <div class="box">
-            <img src="countryImages/griekenland.png" class="img1" width="30%" height="150px">
-            <input type="submit" name="submit" value='' class="blue-box"/>
-            <a href="/reizen.php" class="mayo">Click me</a>   
+            <img src="countryImages/griekenland.png" class="img1" width="80%" height="250px">
+            <a href="/reizen.php" >Click me</a>   
         </div>
     </div>
     <div class="row1">
