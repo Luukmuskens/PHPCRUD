@@ -55,17 +55,22 @@ $welkom_tekst = "Welkom op onze reispagina! Hier vind je allerlei mooie reizen g
 <?php
 require_once("db.php");
 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
 $db = new db();
 $conn = $db->get_connection();
 $result = [];
 
-$sql = "SELECT * FROM menu";
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST["search"])) {
     $search = "%" . $_POST["search"] . "%";
     $sql = "SELECT * FROM menu WHERE name LIKE :search";
     $stmt = $conn->prepare($sql);
     $stmt->execute(['search' => $search]);
+    $result = $stmt->fetchAll();
+} else {
+    $sql = "SELECT * FROM menu";
+    $stmt = $conn->query($sql);
     $result = $stmt->fetchAll();
 }
 
@@ -78,7 +83,12 @@ $template = '
     <h2 class="gerecht-prijs">€%s</h2>
 </div>
 ';
+
+foreach ($result as $row) {
+    printf($template, htmlspecialchars($row['naam']), htmlspecialchars($row['omschrijving']), number_format($row['bedrag'], 2));
+}
 ?>
+
 </div>
 
 <div class="tussen-stuk"></div>
